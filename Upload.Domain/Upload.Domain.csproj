@@ -7,8 +7,8 @@
     <ProjectGuid>{AC51E091-451A-4904-B1A4-AD2F9E59F479}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ToDo.Domain</RootNamespace>
-    <AssemblyName>ToDo.Domain</AssemblyName>
+    <RootNamespace>Upload.Domain</RootNamespace>
+    <AssemblyName>Upload.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

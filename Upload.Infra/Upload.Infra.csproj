@@ -7,8 +7,8 @@
     <ProjectGuid>{95C5DD0E-C61A-4577-ABAD-8CA83C29979A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ToDo.Infra</RootNamespace>
-    <AssemblyName>ToDo.Infra</AssemblyName>
+    <RootNamespace>Upload.Infra</RootNamespace>
+    <AssemblyName>Upload.Infra</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
