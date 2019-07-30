@@ -9,7 +9,7 @@ namespace Upload.App.Utils
     {
         public static string ApiResponse(string method, string requestType, Object request = null)
         {
-            string ApiBaseUrl = "http://localhost:57437/";
+            string ApiBaseUrl = "http://localhost/UploadApi/";
             string response = "";
             try
             {
