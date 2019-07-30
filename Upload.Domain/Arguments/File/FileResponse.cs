@@ -17,10 +17,12 @@ namespace ToDo.Domain.Arguments.File
                 Name = file.Name,
                 Size = file.Size,
                 IdUser = file.IdUser,
-                CreatedDate = file.CreatedDate
+                CreatedDate = file.CreatedDate,
+                NomeInterno = file.NomeInterno
             };
         }
 
+        public Guid NomeInterno { get; set; }
         public string Name { get; set; }
         public decimal Size { get; set; }
         public int IdUser { get; set; }

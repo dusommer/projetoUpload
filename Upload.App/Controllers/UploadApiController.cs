@@ -195,9 +195,10 @@ namespace Upload.App.Controllers
             {
                 // Create a single file
                 var path = ConsolidateFile(configuration);
-
+                var extension = configuration.FileName.Split('.');
+                var fileName = Guid.NewGuid();
                 // Rename consolidated with original name of upload
-                RenameFile(path, Path.Combine(root, configuration.FileName));
+                RenameFile(path, Path.Combine(root, fileName.ToString() + (extension.Length > 1 ? "." + extension[extension.Length - 1] : "")));
 
                 // Delete chunk files
                 DeleteChunks(configuration);
@@ -207,7 +208,8 @@ namespace Upload.App.Controllers
                     CreatedDate = DateTime.Now,
                     IdUser = int.Parse(User.GetUserId()),
                     Name = configuration.FileName,
-                    Size = configuration.Size
+                    Size = configuration.Size,
+                    NomeInterno = fileName
                 };
 
                 JsonConvert.DeserializeObject<InsertFileResponse>

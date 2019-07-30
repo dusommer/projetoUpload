@@ -16,10 +16,9 @@ namespace Upload.Infra.Persistence
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Database.SetInitializer<UploadContext>(null);
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Properties<string>().Configure(p => p.HasColumnType("varchar"));
-
-
 
             modelBuilder.Entity<User>()
                 .Property(e => e.Email)
@@ -47,6 +46,10 @@ namespace Upload.Infra.Persistence
 
             modelBuilder.Entity<File>()
                 .Property(e => e.CreatedDate)
+                .IsRequired();
+
+            modelBuilder.Entity<File>()
+                .Property(e => e.NomeInterno)
                 .IsRequired();
 
 

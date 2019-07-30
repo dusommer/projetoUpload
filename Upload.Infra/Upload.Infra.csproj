@@ -57,6 +57,10 @@
     <Compile Include="Migrations\201907211846431_CriandoBanco.Designer.cs">
       <DependentUpon>201907211846431_CriandoBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907300142509_AddNomeInterno.cs" />
+    <Compile Include="Migrations\201907300142509_AddNomeInterno.Designer.cs">
+      <DependentUpon>201907300142509_AddNomeInterno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\Repository\Base\RepositoryBase.cs" />
     <Compile Include="Persistence\Repository\RepositoryFile.cs" />
@@ -79,6 +83,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201907211846431_CriandoBanco.resx">
       <DependentUpon>201907211846431_CriandoBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907300142509_AddNomeInterno.resx">
+      <DependentUpon>201907300142509_AddNomeInterno.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

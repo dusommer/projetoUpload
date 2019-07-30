@@ -289,7 +289,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60097</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57437/</IISUrl>
+          <IISUrl>http://localhost:57437/UploadApi</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:57437/UploadApi</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

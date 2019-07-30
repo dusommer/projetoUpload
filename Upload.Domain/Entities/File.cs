@@ -9,14 +9,16 @@ namespace Upload.Domain.Entities
         {
         }
 
-        public File(string name, decimal size, int idUser, DateTime createdDate)
+        public File(string name, decimal size, int idUser, DateTime createdDate, Guid nomeInterno)
         {
             Name = name;
             Size = size;
             IdUser = idUser;
             CreatedDate = createdDate;
+            NomeInterno = nomeInterno;
         }
 
+        public Guid NomeInterno { get; set; }
         public string Name { get; private set; }
         public decimal Size { get; private set; }
         public int IdUser { get; private set; }

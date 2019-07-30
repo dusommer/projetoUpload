@@ -31,7 +31,7 @@ namespace Upload.Domain.Services
             }
             else
             {
-                file = new File(request.Name, request.Size, request.IdUser, request.CreatedDate);
+                file = new File(request.Name, request.Size, request.IdUser, request.CreatedDate, request.NomeInterno);
                 file = _repositoryFile.Insert(file);
             }
 

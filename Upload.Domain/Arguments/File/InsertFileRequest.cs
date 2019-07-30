@@ -5,6 +5,7 @@ namespace Upload.Domain.Arguments.File
 {
     public class InsertFileRequest : IRequest
     {
+        public Guid NomeInterno { get; set; }
         public string Name { get; set; }
         public decimal Size { get; set; }
         public int IdUser { get; set; }
